@@ -1,0 +1,66 @@
+#!/usr/bin/env php
+<?php
+/*
+ ============ {IndoSec Framework} =============
+
+	Coded By Arikun - IndoSec
+	Tools : DoToIp (Domain To Ip)
+	Copyrigt (C) 2020 - Nii-san Hax0r
+ 
+ ============ {IndoSec Framework} =============
+*/
+
+os();
+error_reporting(0);
+echo "
+       / .' 	DoToIp
+ .---. \/	Crafted By Arikun - IndoSec
+(._.' \()	Copyright (C) 2020 - Nii-sanHax0r
+ ^'''^
+ \n";
+echo "Input File : ";$nf = trim(fgets(STDIN));
+
+$data = fopen($nf, "r");
+$get = fgets($data);
+
+if ($get == false) {
+	echo "Tidak Ada File Atau Apapun !\n";
+}else{
+	sleep(5);
+	echo "Found !";
+	echo "System Running !";
+	sleep(3);
+	function count_lines($file)
+	{
+		$handle = fopen( $file, "r" );
+		$count = 0;
+		while(fgets($handle))
+		{
+			$count++;
+		}
+		fclose($handle);
+		return $count;
+	}
+	$file=$nf;
+	$count = count_lines($file);
+	$open = fopen($nf, "r" );
+	for ($i=0; $i < $count; $i++) {
+		$get = fgets($open);
+		$remove = array("http://","https://");
+		$a = str_replace($remove,"",$get);
+		$rev = gethostbyname(trim($a));
+		echo "\n".$a."=>".$rev."\n";
+		file_put_contents('result.txt', $rev. PHP_EOL , FILE_APPEND | LOCK_EX);
+	}
+	fclose($open);
+}
+function os()
+{
+	$os = PHP_OS;
+	if ($os = "linux") {
+		system("clear");
+	}elseif ($os = "windows") {
+		system("cls");
+	}
+}
+?>
