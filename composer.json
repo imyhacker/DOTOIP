@@ -7,10 +7,7 @@
     "prefer-stable": true,
     "require": {
         "php": ">=5.6"
-    }
-    "require": {
-    "dotoip/dotoip":"dev-master@dev"
-  },
+    },
   "repositories": [
     {
        "type": "vcs",
