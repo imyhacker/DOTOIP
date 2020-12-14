@@ -1,6 +1,6 @@
 {
-    "name": "DOTOIP/DOTOIO",
+    "name": "dotoip/dotoip",
     "type": "project",
     "description": "Reverse Domain To Ip Address And Save The Result",
-    "license": "MIT"   
+    "license": "MIT"    
 }
