@@ -8,12 +8,6 @@
     "require": {
         "php": ">=5.6|^7.0|8.0"
     },
-  "repositories": [
-    {
-       "type": "vcs",
-       "url": "https://github.com/imyhacker/DOTOIP" 
-    }
-  ],
     "authors": [
         {
             "name": "Arikun1337",
