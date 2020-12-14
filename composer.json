@@ -18,5 +18,15 @@
         "optimize-autoloader": true,
         "preferred-install": "dist",
         "sort-packages": true
-    }
+    },
+    "authors": [
+        {
+            "name": "Arikun1337",
+            "homepage": "https://github.com/imyhacker/DOTOIP"
+        }
+    ],
+    "prefer-stable": true,
+    "config": {
+        "sort-packages": true
+    },
 }
