@@ -2,13 +2,9 @@
     "name": "DOTOIP/DOTOIO",
     "type": "project",
     "description": "Reverse Domain To Ip Address And Save The Result",
-    "keywords": [
-       "TOOLS",
-       "OSINT"
-    ],
     "license": "MIT",
     "require": {
-        "php": "^7.3|^8.0",
+        "php": "^7.3",
     }
     
 }
