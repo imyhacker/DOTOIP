@@ -4,12 +4,22 @@
 Is a simple PHP tool, which is useful for reversing Domains to Ip easily.
 
 ### How To Install And Use ? 
+
+1. Install Manual 
 <details>
- <summary><strong>Click Here To How Install & Use</strong></summary>
+ <summary><strong>MANUAL</strong></summary>
     - 🤔 git clone https://github.com/imyhacker/DOTOIP</br>
-    - 🤔 cd DOTOIO</br>
+    - 🤔 cd DOTOIP</br>
     - 🤔 php index</br>
 </details>
+2. Install With Composer
+<details>
+ <summary><strong>COMPOSER</strong></summary>
+    - 🤔 composer create-project dotoip/dotoip -s dev</br>
+    - 🤔 cd dotoip</br>
+    - 🤔 php index</br>
+</details>
+
 
 ### System Requirements ? 
 <details>
